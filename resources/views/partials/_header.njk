@@ -1,0 +1,125 @@
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid-small uk-child-width-auto uk-flex-middle uk-flex-between" data-uk-grid="">
+        <div>
+          <figure class="page-header__brand">
+            <img src="resources/img/logo.png" alt="Логотип компании" title="Логотип компании">
+          </figure>
+        </div>
+        <div class="uk-visible@m">
+          <form class="page-header__search uk-search">
+            <a href="" class="uk-search-icon-flip" data-uk-search-icon></a>
+            <input class="uk-search-input" type="search" placeholder="Поиск по сайту">
+          </form>
+        </div>
+        <div class="uk-visible@m">
+          <div class="page-header__phone">
+            <a href="#"><span data-uk-icon="receiver"></span> +7 (123) 456-78-90</a>
+            <a href="#modal-contact" data-uk-toggle>Заказать обратный звонок</a>
+          </div>
+        </div>
+        <div>
+          <div class="page-header__controls uk-flex uk-flex-middle uk-flex-between uk-text-center">
+            <a href="#"><span data-uk-icon="user"></span> Кабинет</a>
+            <a href="#"><span data-uk-icon="heart"></span> Избранное</a>
+            <a href="#"><span data-uk-icon="cart"></span> Корзина</a>
+          </div>
+        </div>
+        <div class="uk-hidden@m">
+          <div class="page-header__toggle">
+            <a href="#offcanvas" data-uk-toggle data-uk-navbar-toggle-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% set links = [
+    { text: 'Новинки' },
+    { text: 'Новости' },
+    { text: 'Коллекции' },
+    { text: 'Отелям' },
+    { text: 'Опт' },
+    { text: 'Сервис' },
+    { text: 'Акции' }
+  ] %}
+  <nav class="page-header__nav uk-visible@m">
+    <div class="uk-container">
+      <ul class="page-header__nav--main">
+        <li>
+          <a href="#"><span data-uk-icon="menu"></span> Наш каталог</a>
+          <div class="page-header__drop uk-box-shadow-medium uk-drop"
+               data-uk-drop="boundary: .page-header__nav--main; boundary-align: true; pos: bottom-justify; animation: uk-animation-slide-top-medium; delay-hide: 100; mode: click; offset: 10">
+            <div class="page-header__drop--wrapper">
+              <div class="page-header__drop--menu">
+                <ul
+                  data-uk-switcher="connect: .page-header__drop--items; animation: uk-animation-fade">
+                  <li><a href="#">Душевые двери <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые перегородки <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые углы <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые кабины <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Шторы в ванную <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые поддоны <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Трапы для душа <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Сифоны для душа <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые системы <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Акксессуары для пожилых <span data-uk-icon="play"></span></a></li>
+                </ul>
+              </div>
+              {% set baths = [
+                { titles: ['Раздвижные', "Распашные", "Складные", "Маятниковые", "Нестандартные", 'Откидные'] },
+                { titles: ['Распашные', "Распашные", "Маятниковые", "Маятниковые", "Нестандартные"] },
+                { titles: ['Распашные', "Распашные", "Маятниковые", "Маятниковые", "Нестандартные"] },
+                { titles: ['Распашные', "Распашные", "Маятниковые", "Распашные", "Нестандартные"] },
+                { titles: ['Распашные', "Распашные", "Маятниковые", "Маятниковые", "Нестандартные"] },
+                { titles: ['Распашные', "Распашные", "Распашные", "Маятниковые", "Нестандартные"] },
+                { titles: ['Распашные', "Распашные", "Маятниковые", "Маятниковые", "Нестандартные"] },
+                { titles: ['Распашные', "Распашные", "Маятниковые", "Маятниковые", "Нестандартные"] },
+                { titles: ['Распашные', "Распашные", "Маятниковые", "Маятниковые", "Нестандартные"] },
+                { titles: ['Складные', "Нестандартные", "Складные", "Маятниковые", "Нестандартные"] }
+              ] %}
+              <ul class="page-header__drop--items uk-switcher">
+                {% for bath in baths %}
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      {% for title in bath.titles %}
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>{{ title }}</span>
+                            </div>
+                          </a>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </li>
+        {% for link in links %}
+          <li>
+            <a href="#">{{ link.text }} <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header> {# /.page-header #}

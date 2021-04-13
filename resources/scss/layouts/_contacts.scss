@@ -1,0 +1,99 @@
+.contacts {
+  h2 {
+    font-weight: 500;
+  }
+
+  &-filter {
+    > a {
+      display: block;
+      padding: 8px;
+      border: 1px solid $gray;
+      position: relative;
+      color: $middle-gray;
+      text-decoration: none;
+
+      span {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__drop {
+      background: $white;
+      padding: 20px;
+      @extend .uk-box-shadow-medium;
+
+      ul {
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+          + li {
+            margin-top: 8px;
+          }
+
+          a {
+            color: $middle-gray;
+          }
+        }
+      }
+    }
+
+    &__cities {
+      margin-bottom: 0;
+      list-style-type: none;
+      padding-left: 0;
+      max-height: 735px;
+      overflow-y: scroll;
+    }
+
+    &__city {
+      padding: 10px 18px;
+      &:nth-child(even) {
+        background: $light-gray;
+      }
+
+      & + & {
+        margin-top: 15px;
+      }
+
+      &--title {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+
+      &--contact {
+        display: flex;
+        line-height: 1.2;
+        font-size: 0.9em;
+
+        & + & {
+          margin-top: 15px;
+        }
+
+        span {
+          flex-shrink: 0;
+          color: $blue;
+          margin-right: 10px;
+        }
+
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &-map {
+    @include mq(m) {
+      > ymaps {
+        height: 100% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+%gradient-border {
+  background: #fff;
+  background: linear-gradient(to right, #fecd52 0%, #fff 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#999999', GradientType=1);
+  content: "";
+  display: block;
+  height: 6px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+%all-alignment {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+%vertical-alignment {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%horizontal-alignment {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+%countdown {
+  display: flex;
+
+  div {
+    background: $white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    + div {
+      margin-left: 0.6em;
+    }
+  }
+
+  .uk-countdown-number {
+    display: flex;
+    font-size: 1em;
+
+    span {
+      font-size: 1.1em;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      + span {
+        border-left: 1px solid $light-gray;
+      }
+    }
+  }
+
+  small {
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    width: 50px;
+  }
+}

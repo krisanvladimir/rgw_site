@@ -1,0 +1,139 @@
+{% set pageTitle = 'Верстка сайтов' %}
+{% set pageDescription = 'SV-Coding' %}
+{% set breadcrumbsTitle = 'Список сравнения' %}
+
+{% extends './layouts/layout.njk' %}
+
+{% block content %}
+  {% include './partials/_breadcrumbs.njk' %}
+
+  <section class="compare products uk-margin-large-top uk-margin-xlarge-bottom">
+    <div class="uk-container">
+      <header class="uk-margin-medium-bottom">
+        <h2 class="uk-h4 uk-text-bold">Сравнить товары</h2>
+        <div>
+          <a href="#" class="uk-button uk-button-default">Добавить еще товары</a>
+          <a href="#" class="uk-button uk-button-default">Список сравнения</a>
+          <a href="#" class="uk-button uk-button-secondary">Очистить весь список</a>
+        </div>
+      </header>
+
+      <div class="uk-grid uk-grid-match uk-grid-collapse" data-uk-grid="">
+        <div class="uk-width-1-5@m">
+          <div class="compare-filters">
+            <a href="#" class="uk-button uk-button-default">Все характеристики</a>
+            <a href="#" class="uk-button uk-button-default">Только отличия</a>
+            <a href="#" class="uk-button uk-button-default">Только похожие</a>
+          </div>
+
+          <table class="compare-table uk-table uk-visible@m">
+            <tbody>
+            <tr>
+              <td>Высота кабины:</td>
+            </tr>
+            <tr>
+              <td>Ширина кабины:</td>
+            </tr>
+            <tr>
+              <td>Глубина кабины:</td>
+            </tr>
+            <tr>
+              <td>Форма кабины:</td>
+            </tr>
+            <tr>
+              <td>Производитель:</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="uk-width-4-5@m">
+          {% set products = [
+            { title: 'Перегородка для душа RGW WA-010B', price: '129 000' },
+            { title: 'Перегородка для душа RGW WA-010B', price: '132 000' },
+            { title: 'Перегородка для душа RGW WA-010B', price: '132 000' },
+            { title: 'Перегородка для душа RGW WA-010B', price: '132 000' },
+            { title: 'Перегородка для душа RGW WA-010B', price: '222 000' }
+          ] %}
+          <div class="compare-slider uk-position-relative" data-uk-slider="autoplay: true">
+            <div class="uk-slider-container">
+              <ul
+                class="compare-slider__items uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-grid-collapse">
+                {% for product in products %}
+                  <li>
+                    <article class="products-item uk-box-shadow-hover-medium">
+                      <a href="#" class="products-item__delete"><span data-uk-icon="close"></span></a>
+
+                      <div class="products-item__meta">
+                        <h3><a href="#" class="uk-link-reset">{{ product.title }}</a></h3>
+                        <div class="products-item__meta--price">
+                          <span>149 000р.</span>
+                          <span>{{ product.price }}р.</span>
+                        </div>
+                        <span class="products-item__meta--discount">-15%</span>
+                      </div>
+
+                      <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                        <div class="products-item__slideshow--buttons">
+                          <a href="#"><span data-uk-icon="cart"></span></a>
+                          <a href="#"><span data-uk-icon="search"></span></a>
+                          <a href="#"><span data-uk-icon="heart"></span></a>
+                        </div>
+
+                        <ul class="products-item__slideshow--items uk-slideshow-items">
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine1.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine2.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine3.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                        </ul>
+                        <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+                      </div>
+                    </article>
+
+                    <table class="uk-table uk-margin-top uk-disabled">
+                      <tbody>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>Трапеция</td>
+                      </tr>
+                      <tr>
+                        <td>Германия</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <a class="uk-position-center-left-out uk-visible@s" href="#" data-uk-slidenav-previous
+               data-uk-slider-item="previous"></a>
+            <a class="uk-position-center-right-out uk-visible@s" href="#" data-uk-slidenav-next
+               data-uk-slider-item="next"></a>
+
+            <ul class="compare-slider__dots uk-slider-nav uk-dotnav"></ul>
+          </div> {# /.compare-slider #}
+        </div>
+      </div>
+    </div>
+  </section> {# /.products #}
+{% endblock %}

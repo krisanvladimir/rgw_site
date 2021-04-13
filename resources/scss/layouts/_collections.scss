@@ -1,0 +1,82 @@
+.collections {
+  &-item {
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    $parent: &;
+    @include mq(m) {
+      height: 420px;
+    }
+
+    img {
+      transition: filter 0.3s;
+
+      @at-root #{$parent} {
+        &:hover img {
+          filter: brightness(0.5);
+        }
+      }
+    }
+
+    &__content {
+      transform: translateY(280px);
+      color: $white;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+      transition: all 0.3s;
+      $this: &;
+      @include mq(m) {
+        transform: translateY(320px);
+      }
+
+      @at-root #{$parent} {
+        &:hover #{$this} {
+          transform: translateY(20px);
+        }
+      }
+
+      &--title {
+        background: $blue;
+        padding: 14px 20px;
+
+        span {
+          font-weight: 300;
+          font-size: 0.85em;
+        }
+
+        h2 {
+          color: $white;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 300;
+          line-height: 1;
+        }
+      }
+
+      &--list {
+        margin-top: 20px;
+
+        ul {
+          margin: 0;
+          padding-left: 40px;
+
+          li {
+            font-weight: 300;
+            font-size: 0.9em;
+            @include mq(m) {
+              font-size: 1em;
+            }
+
+            + li {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

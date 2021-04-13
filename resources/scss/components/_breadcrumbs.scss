@@ -1,0 +1,34 @@
+.breadcrumbs {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background: $light-gray;
+
+  &-menu {
+    margin-bottom: 10px;
+
+    li {
+      &:nth-child(n + 2):not(.uk-first-column)::before {
+        margin: 0 4px 0 calc(4px - 4px);
+        content: "\2022";
+        font-size: 22px;
+        line-height: 0;
+        color: $blue;
+        position: relative;
+      }
+
+      a {
+        color: $black;
+        font-size: 1em;
+      }
+    }
+  }
+
+  &-title {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    @include mq(m) {
+      font-size: 1.5em;
+    }
+  }
+}

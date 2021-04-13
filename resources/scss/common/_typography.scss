@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap");
+
+body {
+  font-family: $montserrat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6 {
+  color: $dark-blue;
+  font-family: $montserrat;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.5em;
+  @include mq(m) {
+    font-size: 2.2em;
+  }
+}
+
+h2 {
+  font-size: 1.4em;
+  @include mq(m) {
+    font-size: 2em;
+  }
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    color: $blue;
+  }
+}

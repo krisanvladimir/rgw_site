@@ -1,0 +1,41 @@
+.uk-light {
+  color: $white;
+}
+
+.uk-box-shadow-small {
+  box-shadow: 0 4px 12px rgba($black, 0.15);
+}
+
+.uk-box-shadow-medium {
+  box-shadow: 0 6px 16px rgba($black, 0.2);
+}
+
+.uk-box-shadow-large {
+  box-shadow: 0 6px 24px rgba($black, 0.25);
+}
+
+.uk-box-shadow-hover-small:hover {
+  box-shadow: 0 4px 12px rgba($black, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+.uk-box-shadow-hover-medium:hover {
+  box-shadow: 0 6px 16px rgba($black, 0.15);
+  transition: box-shadow 0.3s;
+}
+
+.uk-box-shadow-hover-large:hover {
+  box-shadow: 0 6px 24px rgba($black, 0.25);
+  transition: box-shadow 0.3s;
+}
+
+.uk-padding {
+  padding: 20px;
+  @include mq(l) {
+    padding: 30px;
+  }
+}
+
+.uk-text-bold {
+  font-weight: 600;
+}

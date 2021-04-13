@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:type" content="Website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="dist/app.css">
+  <link rel='shortcut icon' type='image/x-icon' href='resources/img/favicon.ico'/>
+</head>
+<body class="{{ bodyClass }}">
+  {% include '../partials/_header.njk' %}
+  <main class="page-wrapper">
+    {% block content %}{% endblock %}
+  </main>
+  {% include '../partials/_footer.njk' %}
+  {% include '../partials/_modal.njk' %}
+  {% include '../partials/_offcanvas.njk' %}
+  <script src="dist/app.js"></script>
+</body>
+</html>

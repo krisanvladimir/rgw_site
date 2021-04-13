@@ -1,0 +1,10 @@
+form {
+  .uk-checkbox {
+    &:checked {
+      border: 1px solid $blue;
+      background-color: $white;
+      color: $blue;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYAAAArzdW1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACkSURBVHgBhY6xDcJADEXtGERKNiBscOKgYBqgg44NkhGgQEAoIiZATJASCd1xUCG2SA2Kj1ykNCjAL2z5+fvLCD8k1qcAfD+jr4bVWRA17/iyD6xPMAF5nIK1Rz3tzz0HZayT3s6ElYmIQ1v0vEWRmxuuYM578CCVW3UDpA5YHjM/u9fJMCv31bXcqAUgjkrIvFSzQVT7rIwvRZo+wD+JxLQ/2RuulzOVpz17UQAAAABJRU5ErkJggg==");
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.uk-button {
+  transition: background 0.3s, transform 0.3s, padding 0.3s;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 42px;
+  padding: 0 20px;
+  @include mq(m) {
+    font-size: 1.1em;
+    padding: -40px;
+    line-height: 56px;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
+}
+
+.uk-button-primary {
+  background: $primary-color;
+  color: $white;
+  position: relative;
+  $parent: &;
+
+  &:hover {
+    background: $primary-color;
+    color: $white;
+    padding-right: 60px;
+  }
+
+  &:active {
+    background: $primary-color;
+    color: $white;
+  }
+
+  &:focus {
+    background: $primary-color;
+    color: $white;
+  }
+
+  span {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(-5px, -50%);
+    transition: all 0.3s;
+
+    @at-root #{$parent}:hover span {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(5px, -50%);
+    }
+
+    svg {
+      width: 30px;
+    }
+  }
+}
+
+.uk-button-secondary {
+  background: $primary-color;
+  color: $white;
+
+  &:hover {
+    background: $primary-color;
+    color: $white;
+  }
+
+  &:active {
+    background: $primary-color;
+    color: $white;
+  }
+
+  &:focus {
+    background: $primary-color;
+    color: $white;
+  }
+}
+
+.uk-button-default {
+  color: $blue;
+  border: 1px solid $blue;
+
+  &:hover {
+    color: $blue;
+    border: 1px solid $blue;
+  }
+
+  &:active {
+    color: $blue;
+    border: 1px solid $blue;
+  }
+
+  &:focus {
+    color: $blue;
+    border: 1px solid $blue;
+  }
+}
+
+.button-round {
+  background: $blue;
+  border-radius: 50%;
+  color: $white;
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.3s;
+  font-size: 14px;
+  position: relative;
+  $parent: &;
+
+  &:hover {
+    border-radius: 70px;
+    color: $white;
+    padding: 10px 20px 10px 80px;
+
+    #{$parent}__text {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-60px, -50%);
+    }
+
+    .uk-icon {
+      margin-left: 20px;
+    }
+  }
+
+  &__text {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transition: all 0.3s;
+    display: block;
+    width: 100px;
+    transform: translate(-60px, -50%);
+  }
+
+  .uk-icon {
+    transition: all 0.3s;
+
+    svg {
+      width: 30px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "~uikit/dist/css/uikit.min.css";
+@import "~nouislider/distribute/nouislider.css";
+
+@import "common/variables";
+@import "common/functions";
+@import "common/mixins";
+@import "common/extends";
+@import "common/global";
+@import "common/uk-overrides";
+@import "common/typography";
+@import "common/helpers";
+@import "common/animations";
+
+@import "components/buttons";
+@import "components/page-offcanvas";
+@import "components/modal-contact";
+@import "components/tables";
+@import "components/forms";
+@import "components/notifications";
+@import "components/sliders";
+@import "components/breadcrumbs";
+@import "components/pagination";
+
+@import "layouts/page-header";
+@import "layouts/page-footer";
+@import "layouts/hero";
+@import "layouts/collections";
+@import "layouts/best";
+@import "layouts/products";
+@import "layouts/banner";
+@import "layouts/news";
+@import "layouts/promos";
+@import "layouts/about";
+@import "layouts/catalog";
+@import "layouts/product";
+@import "layouts/post";
+@import "layouts/postpone";
+@import "layouts/contacts";
+@import "layouts/payment";
+@import "layouts/compare";
+@import "layouts/cart";

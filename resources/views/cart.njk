@@ -1,0 +1,137 @@
+{% set pageTitle = 'Верстка сайтов' %}
+{% set pageDescription = 'SV-Coding' %}
+{% set breadcrumbsTitle = 'Корзина и оформление заказа' %}
+
+{% extends './layouts/layout.njk' %}
+
+{% block content %}
+  {% include './partials/_breadcrumbs.njk' %}
+
+  <section class="cart uk-margin-medium-top uk-margin-large-bottom">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid-small" data-uk-grid="">
+        <div class="uk-width-1-4@l uk-flex-last@l">
+          <div class="cart-summary">
+            <span class="cart-summary__title">Ваш заказ:</span>
+
+            <div class="cart-summary__kind">
+              <span>Товары:</span>
+              <span>15 000 &#8381;</span>
+            </div>
+
+            <div class="cart-summary__kind">
+              <span>Скидка:</span>
+              <span>5 000 &#8381;</span>
+            </div>
+
+            <div class="cart-summary__kind">
+              <span>Итого:</span>
+              <span>155 000 &#8381;</span>
+            </div>
+
+            <hr>
+
+            <div class="cart-summary__button">
+              <a href="#" class="uk-button uk-button-secondary">Оформить заказ</a>
+            </div>
+
+            <div class="cart-summary__agree">
+              <label for="cart-agree">
+                <input type="checkbox" id="cart-agree" class="uk-checkbox">
+                <span>Я прочитал и согласен с правилами «Соглашение на обработку персональных данных»</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-width-3-4@l">
+          <div class="cart-products">
+            {% set products = [1, 2, 3] %}
+            {% for product in products %}
+              <div class="cart-product">
+                <figure class="cart-product__image uk-cover-container">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                       data-src="resources/img/cabines/cabine1.jpg"
+                       alt="Кабина" title="Кабина" data-uk-img="" data-uk-cover>
+                </figure>
+                <div class="cart-product__wrapper">
+                  <div class="cart-product__description">
+                    <a href="#" class="cart-product__description--title">Перегородка для душа RGW WA-010B угловая, профиль хромовый</a>
+                    <span class="cart-product__description--article"><b>Артикул:</b> 9982732</span>
+                    <div class="cart-product__description--specs">
+                      <div>
+                        <span>Высота кабины:</span>
+                        <span>1800 мм</span>
+                      </div>
+                      <div>
+                        <span>Цвет стекла:</span>
+                        <span>Матовый</span>
+                      </div>
+                      <div>
+                        <span>Тип профиля:</span>
+                        <span>Хром</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-product__description--price">
+                    <span>115.000&#8381;</span>
+                    <span>Цена за 1 шт.</span>
+                  </div>
+                  <form class="cart-product__description--quantity">
+                    <span class="cart-product__description--quantity-minus" data-uk-icon="minus"></span>
+                    <input type="text" name="product-quantity" value="1">
+                    <span class="cart-product__description--quantity-plus" data-uk-icon="plus"></span>
+                  </form>
+                  <div class="cart-product__description--old">
+                    <span>115.000&#8381;</span>
+                    <span>129.000&#8381;</span>
+                  </div>
+                </div>
+                <a href="#" class="cart-product__trash"><span data-uk-icon="trash"></span></a>
+              </div>
+            {% endfor %}
+
+            <form class="cart-products__promo uk-margin-medium-top">
+              <input type="text" class="uk-input" placeholder="У вас есть промокод?">
+              <button type="submit" class="uk-button uk-button-secondary">Получить скидку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-data uk-width-3-4@m uk-margin-medium-top">
+        <h3 class="cart-data__title">Оформление заказа</h3>
+        <p class="cart-data__text">Пожалуйста, <a href="#">авторизуйтесь</a>, если Вы уже оформляли заказы в нашем магазине и хотите заполнить все поля автоматически.</p>
+        <form class="cart-data__form uk-grid uk-grid-small uk-margin-medium-top" data-uk-grid>
+          <div class="uk-width-1-1">
+            <h4 class="cart-data__form--title">Ваши данные</h4>
+          </div>
+          <div class="uk-width-1-2@s">
+            <input type="text" class="uk-input" name="cart-name" placeholder="Ваше имя">
+          </div>
+          <div class="uk-width-1-2@s">
+            <input type="text" class="uk-input" name="cart-second-name" placeholder="Ваша фамилия">
+          </div>
+          <div class="uk-width-1-2@s">
+            <input type="text" class="uk-input" name="cart-phone" placeholder="Ваш телефон">
+          </div>
+          <div class="uk-width-1-2@s">
+            <input type="text" class="uk-input" name="cart-email" placeholder="Ваш email">
+          </div>
+          <div class="uk-width-1-1">
+            <h4 class="cart-data__form--title">Данные по доставке</h4>
+          </div>
+          <div class="uk-width-1-2@s">
+            <input type="text" class="uk-input" name="cart-city" placeholder="Город">
+          </div>
+          <div class="uk-width-1-2@s">
+            <input type="text" class="uk-input" name="cart-index" placeholder="Индекс">
+          </div>
+          <div class="uk-width-1-1">
+            <textarea class="uk-textarea" name="cart-comment" rows="5" placeholder="Примечания к заказу"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section> {# /.cart #}
+{% endblock %}

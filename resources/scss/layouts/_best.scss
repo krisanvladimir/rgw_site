@@ -1,0 +1,30 @@
+.best {
+  &-switcher {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      $parent: &;
+      a {
+        font-size: 0.8em;
+        color: $gray;
+        padding: 6px;
+        text-decoration: none;
+        border-bottom: 2px solid $gray;
+        @include mq(s) {
+          font-size: 1.5em;
+          padding: 10px;
+        }
+        @at-root #{$parent}.uk-active {
+          a {
+            border-bottom: 2px solid $blue;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

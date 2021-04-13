@@ -1,0 +1,121 @@
+{% set pageTitle = 'Верстка сайтов' %}
+{% set pageDescription = 'SV-Coding' %}
+{% set breadcrumbsTitle = 'Новости и статьи' %}
+
+{% extends './layouts/layout.njk' %}
+
+{% block content %}
+  {% include './partials/_breadcrumbs.njk' %}
+
+  <section class="news uk-margin-large-top">
+    <div class="uk-container">
+      <header>
+        <h2 class="uk-text-center">Актуальные статьи и новости</h2>
+      </header>
+
+      <ul class="best-switcher uk-margin-medium-top" data-uk-switcher="animation: uk-animation-fade">
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Полезные статьи</a></li>
+        <li><a href="#">Советы</a></li>
+      </ul>
+
+      {% set numbers = [1, 2, 3] %}
+      {% set posts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] %}
+      <ul class="uk-switcher uk-margin-medium-top">
+        {% for number in numbers %}
+          <li>
+            <div
+              class="uk-grid uk-grid-column-small uk-grid-row-medium uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" data-uk-grid>
+              {% for post in posts %}
+                <div>
+                  <a class="news-item uk-link-reset">
+                    <figure class="news-item__image uk-cover-container">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="resources/img/cabines/cabine{{ post }}.jpg"
+                           alt="Название новости" title="Название новости" data-uk-img="" data-uk-cover="">
+                    </figure>
+                    <div class="news-item__wrapper">
+                      <span class="news-item__date">21.03.2021</span>
+                      <h3 class="news-item__title">С международным женским днем 8 марта!</h3>
+                      <p class="news-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                        est
+                        fugit illo magni placeat, provident quam qui quos vero voluptas.</p>
+                    </div>
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+
+            <div class="pagination uk-margin-medium-top">
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Показать еще <span data-uk-icon="arrow-right"></span></a></li>
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section> {# /.news #}
+
+  <section class="recent products uk-margin-large-top uk-margin-large-bottom">
+    <div class="uk-container">
+      <header class="uk-margin-medium-bottom">
+        <h2 class="uk-h4 uk-text-bold">Вы смотрели эти товары</h2>
+      </header>
+
+      {% set products = [
+        { title: 'Перегородка для душа RGW WA-010B', price: '129 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '132 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '222 000' }
+      ] %}
+      <div
+        class="products-grid uk-grid uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l "
+        data-uk-grid>
+        {% for product in products %}
+          <div>
+            <article class="products-item uk-box-shadow-hover-medium">
+              <div class="products-item__meta">
+                <h3><a href="#" class="uk-link-reset">{{ product.title }}</a></h3>
+                <div class="products-item__meta--price">
+                  <span>149 000р.</span>
+                  <span>{{ product.price }}р.</span>
+                </div>
+                <span class="products-item__meta--discount">-15%</span>
+              </div>
+              <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                <div class="products-item__slideshow--buttons">
+                  <a href="#"><span data-uk-icon="cart"></span></a>
+                  <a href="#"><span data-uk-icon="search"></span></a>
+                  <a href="#"><span data-uk-icon="heart"></span></a>
+                </div>
+                <ul class="products-item__slideshow--items uk-slideshow-items">
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine1.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine2.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine3.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                </ul>
+                <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section> {# /.recent #}
+{% endblock %}

@@ -1,0 +1,26 @@
+.uk-notification {
+  @extend .uk-box-shadow-medium;
+
+  &.uk-notification-top-right {
+    top: 20px;
+    right: 20px;
+  }
+
+  .uk-notification-message {
+    color: $white;
+    padding: 20px;
+    font-size: 1.1em;
+  }
+
+  .uk-notification-message-success {
+    background: $success-color;
+  }
+
+  .uk-notification-message-danger {
+    background: $danger-color;
+  }
+
+  .uk-close {
+    color: $white;
+  }
+}

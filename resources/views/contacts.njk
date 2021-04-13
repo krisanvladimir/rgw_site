@@ -1,0 +1,68 @@
+{% set pageTitle = 'Верстка сайтов' %}
+{% set pageDescription = 'SV-Coding' %}
+{% set breadcrumbsTitle = 'Контакты' %}
+
+{% extends './layouts/layout.njk' %}
+
+{% block content %}
+  {% include './partials/_breadcrumbs.njk' %}
+
+  <section class="contacts uk-margin-medium-top uk-margin-large-bottom">
+    <div class="uk-container">
+      <header class="uk-margin-medium-bottom">
+        <h2>Официальные представители компании RGW</h2>
+      </header>
+
+      <div class="uk-grid uk-grid-small uk-grid-match" data-uk-grid="">
+        <div class="uk-width-1-3@m">
+          <div class="contacts-filter" data-uk-filter="target: .contacts-filter__cities; animation: fade">
+
+            <a href="#">Выберите город <span data-uk-icon="chevron-down"></span></a>
+            <div class="contacts-filter__drop uk-drop" data-uk-drop="mode: click; offset: 0; pos: bottom-justify">
+              <ul>
+                <li data-uk-filter-control=".moscow">
+                  <a href="#" class="uk-drop-close">Москва</a>
+                </li>
+                <li data-uk-filter-control=".piter">
+                  <a href="#" class="uk-drop-close">Санкт-Петербург</a>
+                </li>
+              </ul>
+            </div>
+
+            {% set cities = [
+              { address: 'Москва, Щербинка,Симферопольское шоссе, 11', class: 'moscow' },
+              { address: 'Москва, Щербинка,Симферопольское шоссе, 11', class: 'moscow' },
+              { address: 'Питер, Щербинка,Симферопольское шоссе, 11', class: 'piter' },
+              { address: 'Питер, Щербинка,Симферопольское шоссе, 11', class: 'piter' }
+            ] %}
+            <ul class="contacts-filter__cities">
+              {% for city in cities %}
+                <li class="contacts-filter__city {{ city.class }}">
+                  <span class="contacts-filter__city--title">RGW - Москва, офис и шоу-рум</span>
+                  <div class="contacts-filter__city--contact">
+                    <span data-uk-icon="location"></span>
+                    {{ city.address }}
+                  </div>
+                  <div class="contacts-filter__city--contact">
+                    <span data-uk-icon="receiver"></span>
+                    <a href="tel:+7 (495) 123-45-67">+7 (495) 123-45-67</a>
+                  </div>
+                  <div class="contacts-filter__city--contact">
+                    <span data-uk-icon="clock"></span>
+                    Пн-Пт: 09:00 - 19:00  Сб-Вс 11:00-18:00
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+        <div class="uk-width-2-3@m">
+          <div class="contacts-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A79879486ba917342e462679b33fdf19bc6367ca394cf04affa7fd759b7841b7b&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> {# /.contacts #}
+{% endblock %}

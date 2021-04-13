@@ -1,0 +1,21 @@
+.uk-table {
+  thead {
+    th {
+      color: $dark-blue;
+      font-weight: 700;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background: $light-blue;
+      }
+    }
+
+    td {
+      color: $dark-blue;
+      font-weight: 500;
+    }
+  }
+}

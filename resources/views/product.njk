@@ -1,0 +1,372 @@
+{% set pageTitle = 'Верстка сайтов' %}
+{% set pageDescription = 'SV-Coding' %}
+{% set breadcrumbsTitle = 'Душевая дверь RGW VI-02' %}
+
+{% extends './layouts/layout.njk' %}
+
+{% block content %}
+  {% include './partials/_breadcrumbs.njk' %}
+
+  <article class="product uk-margin-medium-top uk-margin-large-bottom">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid="">
+        <div>
+          <div class="product-slider" data-uk-slider="autoplay: true">
+            <div class="uk-position-relative">
+              {% set slides = [1, 2, 3, 4, 5] %}
+              <ul class="product-slider__items uk-slider-items uk-child-width-1-1 uk-grid">
+                {% for slide in slides %}
+                  <li>
+                    <figure class="product-slider__image uk-cover-container">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="resources/img/cabines/cabine{{ slide }}.jpg"
+                           alt="Кабина" title="Кабина" data-uk-img="" data-uk-cover>
+                    </figure>
+                  </li>
+                {% endfor %}
+              </ul>
+
+              <a class="uk-position-small uk-position-center-left" href="#" data-uk-slidenav-previous
+                 data-uk-slider-item="previous"></a>
+              <a class="uk-position-small uk-position-center-right" href="#" data-uk-slidenav-next
+                 data-uk-slider-item="next"></a>
+            </div>
+
+            <div class="product-slider__thumbnav uk-grid uk-grid-small uk-child-width-1-6 uk-margin-small-top"
+                 data-uk-grid>
+              {% for slide in slides %}
+                <div>
+                  <a href="#" data-uk-slider-item="{{ loop.index0 }}">
+                    <figure class="product-slider__thumbnav--image uk-cover-container">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="resources/img/cabines/cabine{{ slide }}.jpg"
+                           alt="Кабина" title="Кабина" data-uk-img="" data-uk-cover="">
+                    </figure>
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="product-labels" data-uk-margin>
+            <span class="product-labels__discount">-15%</span>
+            <span class="product-labels__availability">В наличии</span>
+            <span class="product-labels__showroom">Шоурум</span>
+          </div>
+
+          <h2 class="product-title">Душевая дверь RGW VI-02 модель safari</h2>
+
+          <span class="product-article"><b>Артикул:</b> 9938221</span>
+
+          <div class="product-rating">
+            <div class="product-rating__stars" style="--rating: 4.3;"></div>
+            <span class="product-rating__reviews">Рейтинг 4,65 на базе <a href="#product-reviews"
+                                                                          data-uk-scroll="offset: 40">125 отзывов</a></span>
+          </div>
+
+          <div class="product-discounts">
+            <div class="product-discounts__countdown"
+                 data-uk-countdown="date: 2021-04-24T19:21:55+00:00">
+              <div class="uk-box-shadow-medium">
+                <span class="uk-countdown-number uk-countdown-days"></span>
+                <small>дней</small>
+              </div>
+              <div class="uk-box-shadow-medium">
+                <span class="uk-countdown-number uk-countdown-hours"></span>
+                <small>часов</small>
+              </div>
+              <div class="uk-box-shadow-medium">
+                <span class="uk-countdown-number uk-countdown-minutes"></span>
+                <small>минут</small>
+              </div>
+              <div class="uk-box-shadow-medium">
+                <span class="uk-countdown-number uk-countdown-seconds"></span>
+                <small>сек</small>
+              </div>
+            </div>
+            <a href="#">Скидка на душевые трапы RGW</a>
+          </div>
+
+          <div class="product-variants">
+            <form class="product-variants__form">
+              <label for="product-color">Цвет стекла:</label>
+              <select name="product-color" id="product-color" class="uk-select">
+                <option value="Прозрачное">Прозрачное</option>
+                <option value="Матовое">Матовое</option>
+              </select>
+            </form>
+            <form class="product-variants__form">
+              <label for="product-size">Размер:</label>
+              <select name="product-size" id="product-size" class="uk-select">
+                <option value="150x150">150x150</option>
+                <option value="200x200">200x200</option>
+              </select>
+            </form>
+            <form class="product-variants__form">
+              <label for="product-profile">Профиль:</label>
+              <select name="product-profile" id="product-profile" class="uk-select">
+                <option value="5мм">5мм</option>
+                <option value="10мм">10мм</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="product-price">
+            <span class="product-price__current">115 560 &#8381;</span>
+            <span class="product-price__old">146 800 &#8381;</span>
+          </div>
+
+          <div class="product-controls" data-uk-margin="">
+            <form class="product-controls__quantity">
+              <span class="product-controls__quantity--minus" data-uk-icon="minus"></span>
+              <input type="text" name="product-quantity" value="1">
+              <span class="product-controls__quantity--plus" data-uk-icon="plus"></span>
+            </form>
+
+            <div class="product-controls__buttons">
+              <a href="#" class="uk-button uk-button-secondary">В корзину</a>
+              <a href="#" class="uk-button uk-button-default">Купить в 1 клик</a>
+            </div>
+
+            <div class="product-controls__icons">
+              <a href="#"><span data-uk-icon="heart"></span></a>
+              <a href="#"><span data-uk-icon="gitter"></span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="product-section product-description">
+        <div class="product-section__title">
+          <span>Описание</span>
+          <span data-uk-icon="arrow-down"></span>
+        </div>
+
+        <div class="uk-grid uk-child-width-1-2@m" data-uk-grid="">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In odio aliquet ullamcorper ornare eget. Vivamus
+              est ultrices quam dolor. Aliquam in tincidunt commodo ullamcorper sodales eu. Vivamus volutpat volutpat
+              habitant justo, in nec malesuada etiam eget. Velit sed sit tortor auctor. Ullamcorper non convallis porta
+              phasellus orci nisi congue cras. Mollis vitae sapien, rhoncus libero.</p>
+            <p>Ultricies diam sapien, vestibulum sagittis phasellus risus in facilisi. Rhoncus dictum semper amet,
+              iaculis. Quis ac non urna vel et egestas. Elementum in habitant tempus amet, amet, dui porta hendrerit.
+              Bibendum tortor vel congue blandit et. ue a, nec.</p>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In odio aliquet ullamcorper ornare eget. Vivamus
+              est ultrices quam dolor. Aliquam in tincidunt commodo ullamcorper sodales eu. Vivamus volutpat volutpat
+              habitant justo, in nec malesuada etiam eget. Velit sed sit tortor auctor. Ullamcorper non convallis porta
+              phasellus orci nisi congue cras. Mollis vitae sapien, rhoncus libero.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-section product-specs">
+        <div class="product-section__title">
+          <span>Характеристики</span>
+          <span data-uk-icon="arrow-down"></span>
+        </div>
+
+        <div class="uk-grid uk-child-width-1-2@m" data-uk-grid="">
+          <div>
+            <div class="product-specs__item">
+              <span>Высота кабины:</span>
+              <span>800мм.</span>
+            </div>
+            <div class="product-specs__item">
+              <span>Профиль:</span>
+              <span>Хром</span>
+            </div>
+            <div class="product-specs__item">
+              <span>Толщина стекла:</span>
+              <span>25мм.</span>
+            </div>
+            <div class="product-specs__item">
+              <span>Форма душевой кабины:</span>
+              <span>Трапеция</span>
+            </div>
+          </div>
+          <div>
+            <div class="product-specs__item">
+              <span>Высота кабины:</span>
+              <span>800мм.</span>
+            </div>
+            <div class="product-specs__item">
+              <span>Профиль:</span>
+              <span>Хром</span>
+            </div>
+            <div class="product-specs__item">
+              <span>Толщина стекла:</span>
+              <span>25мм.</span>
+            </div>
+            <div class="product-specs__item">
+              <span>Форма душевой кабины:</span>
+              <span>Трапеция</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="product-reviews" class="product-section product-reviews">
+        <div class="product-section__title">
+          <span>Отзывы</span>
+          <span data-uk-icon="arrow-down"></span>
+        </div>
+
+        <div class="product-reviews__controls">
+          <div class="product-reviews__controls--rating">
+            <div class="product-rating__stars" style="--rating: 4.3;"></div>
+            <span class="product-reviews__controls--rating-text">Рейтинг 4,65 на базе 125 отзывов</span>
+          </div>
+          <a href="#" class="uk-button uk-button-secondary">Добавить отзыв</a>
+        </div>
+
+        <div class="product-reviews__items">
+          <div class="product-reviews__item">
+            <div class="product-reviews__item--user">
+              <span class="product-reviews__item--name">Иванова Ирина</span>
+              <span class="product-reviews__item--type">Проверенный покупатель</span>
+              <div class="product-reviews__item--stars" style="--rating: 5;"></div>
+              <p class="product-reviews__item--text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda beatae, cumque eligendi
+                error est ex facere illo ipsa, ipsum iste necessitatibus nemo nostrum numquam, porro provident quidem rem
+                repudiandae! Adipisci architecto assumenda beatae debitis deleniti deserunt distinctio dolor dolorum eum
+                facilis fuga, harum ised sint tenetur, velit. Explicabo, minus, suscipit. Accusamus
+                accusantium corporis incidunt iure magnam quis, quos similique temporibus ullam.
+              </p>
+            </div>
+            <div class="product-reviews__item--admin">
+              <span class="product-reviews__item--name">Иванова Ирина</span>
+              <span class="product-reviews__item--type">Проверенный покупатель</span>
+              <p class="product-reviews__item--text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda beatae, cumque eligendi
+                error est ex facere illo ipsa, ipsum iste necessitatibus nemo nostrum numquam, porro provident quidem rem
+                repudiandae! Adipixplicabo, minus, suscipit. Accusamus
+                accusantium corporis incidunt iure magnam quis, quos similique temporibus ullam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="products uk-margin-xlarge-top">
+    <div class="uk-container">
+      <header class="uk-margin-medium-bottom">
+        <h2 class="uk-h4 uk-text-bold">Аналогичные товары</h2>
+      </header>
+
+      {% set products = [
+        { title: 'Перегородка для душа RGW WA-010B', price: '129 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '132 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '222 000' }
+      ] %}
+      <div
+        class="products-grid uk-grid uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l "
+        data-uk-grid>
+        {% for product in products %}
+          <div>
+            <article class="products-item uk-box-shadow-hover-medium">
+              <div class="products-item__meta">
+                <h3><a href="#" class="uk-link-reset">{{ product.title }}</a></h3>
+                <div class="products-item__meta--price">
+                  <span>149 000р.</span>
+                  <span>{{ product.price }}р.</span>
+                </div>
+                <span class="products-item__meta--discount">-15%</span>
+              </div>
+              <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                <div class="products-item__slideshow--buttons">
+                  <a href="#"><span data-uk-icon="cart"></span></a>
+                  <a href="#"><span data-uk-icon="search"></span></a>
+                  <a href="#"><span data-uk-icon="heart"></span></a>
+                </div>
+                <ul class="products-item__slideshow--items uk-slideshow-items">
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine1.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine2.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine3.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                </ul>
+                <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section> {# /.products #}
+
+  <section class="products uk-margin-xlarge-top uk-margin-large-bottom">
+    <div class="uk-container">
+      <header class="uk-margin-medium-bottom">
+        <h2 class="uk-h4 uk-text-bold">С этим товаром так же покупают</h2>
+      </header>
+
+      {% set products = [
+        { title: 'Перегородка для душа RGW WA-010B', price: '129 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '132 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+        { title: 'Перегородка для душа RGW WA-010B', price: '222 000' }
+      ] %}
+      <div
+        class="products-grid uk-grid uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l "
+        data-uk-grid>
+        {% for product in products %}
+          <div>
+            <article class="products-item uk-box-shadow-hover-medium">
+              <div class="products-item__meta">
+                <h3><a href="#" class="uk-link-reset">{{ product.title }}</a></h3>
+                <div class="products-item__meta--price">
+                  <span>149 000р.</span>
+                  <span>{{ product.price }}р.</span>
+                </div>
+                <span class="products-item__meta--discount">-15%</span>
+              </div>
+              <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                <div class="products-item__slideshow--buttons">
+                  <a href="#"><span data-uk-icon="cart"></span></a>
+                  <a href="#"><span data-uk-icon="search"></span></a>
+                  <a href="#"><span data-uk-icon="heart"></span></a>
+                </div>
+                <ul class="products-item__slideshow--items uk-slideshow-items">
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine1.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine2.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                  <li>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                         data-src="resources/img/cabines/cabine3.jpg"
+                         alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                  </li>
+                </ul>
+                <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section> {# /.products #}
+{% endblock %}

@@ -1,0 +1,87 @@
+.page-footer {
+  background: $dark-blue;
+  color: $white;
+  font-family: $open-sans;
+
+  &__item {
+    &--title {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+      font-family: $montserrat;
+    }
+
+    &--contacts {
+      display: flex;
+      align-items: center;
+
+      & + & {
+        margin-top: 30px;
+      }
+
+      .uk-icon {
+        flex-shrink: 0;
+        margin-right: 20px;
+      }
+
+      p {
+        margin: 0;
+
+        span {
+          display: block;
+          font-weight: 300;
+          font-size: 14px;
+        }
+
+        a {
+          display: block;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &--list {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 300;
+        font-size: 14px;
+
+        + li {
+          margin-top: 15px;
+        }
+
+        a {
+          color: $white;
+          text-decoration: none;
+
+          &:last-child {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $white;
+    font-size: 12px;
+    font-weight: 300;
+
+    span {
+      display: block;
+    }
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}

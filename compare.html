@@ -1,0 +1,1533 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Верстка сайтов</title>
+  <meta name="description" content="SV-Coding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Верстка сайтов">
+  <meta property="og:description" content="SV-Coding">
+  <meta property="og:type" content="Website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="dist/app.css">
+  <link rel='shortcut icon' type='image/x-icon' href='resources/img/favicon.ico'/>
+</head>
+<body class="">
+  <header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid-small uk-child-width-auto uk-flex-middle uk-flex-between" data-uk-grid="">
+        <div>
+          <figure class="page-header__brand">
+            <img src="resources/img/logo.png" alt="Логотип компании" title="Логотип компании">
+          </figure>
+        </div>
+        <div class="uk-visible@m">
+          <form class="page-header__search uk-search">
+            <a href="" class="uk-search-icon-flip" data-uk-search-icon></a>
+            <input class="uk-search-input" type="search" placeholder="Поиск по сайту">
+          </form>
+        </div>
+        <div class="uk-visible@m">
+          <div class="page-header__phone">
+            <a href="#"><span data-uk-icon="receiver"></span> +7 (123) 456-78-90</a>
+            <a href="#modal-contact" data-uk-toggle>Заказать обратный звонок</a>
+          </div>
+        </div>
+        <div>
+          <div class="page-header__controls uk-flex uk-flex-middle uk-flex-between uk-text-center">
+            <a href="#"><span data-uk-icon="user"></span> Кабинет</a>
+            <a href="#"><span data-uk-icon="heart"></span> Избранное</a>
+            <a href="#"><span data-uk-icon="cart"></span> Корзина</a>
+          </div>
+        </div>
+        <div class="uk-hidden@m">
+          <div class="page-header__toggle">
+            <a href="#offcanvas" data-uk-toggle data-uk-navbar-toggle-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <nav class="page-header__nav uk-visible@m">
+    <div class="uk-container">
+      <ul class="page-header__nav--main">
+        <li>
+          <a href="#"><span data-uk-icon="menu"></span> Наш каталог</a>
+          <div class="page-header__drop uk-box-shadow-medium uk-drop"
+               data-uk-drop="boundary: .page-header__nav--main; boundary-align: true; pos: bottom-justify; animation: uk-animation-slide-top-medium; delay-hide: 100; mode: click; offset: 10">
+            <div class="page-header__drop--wrapper">
+              <div class="page-header__drop--menu">
+                <ul
+                  data-uk-switcher="connect: .page-header__drop--items; animation: uk-animation-fade">
+                  <li><a href="#">Душевые двери <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые перегородки <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые углы <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые кабины <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Шторы в ванную <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые поддоны <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Трапы для душа <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Сифоны для душа <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Душевые системы <span data-uk-icon="play"></span></a></li>
+                  <li><a href="#">Акксессуары для пожилых <span data-uk-icon="play"></span></a></li>
+                </ul>
+              </div>
+              
+              <ul class="page-header__drop--items uk-switcher">
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Раздвижные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Складные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Откидные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Распашные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-5@l" data-uk-grid="">
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Складные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Складные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Маятниковые</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                        <div>
+                          <a href="#" class="uk-link-reset">
+                            <div class="page-header__drop--item uk-box-shadow-hover-medium">
+                              <figure>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     data-src="resources/img/cabines/bath.png"
+                                     alt="Кабина" title="Кабина" data-uk-img="">
+                              </figure>
+                              <span>Нестандартные</span>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+        </li>
+        
+          <li>
+            <a href="#">Новинки <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a href="#">Новости <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a href="#">Коллекции <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a href="#">Отелям <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a href="#">Опт <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a href="#">Сервис <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a href="#">Акции <span data-uk-icon="chevron-down"></span></a>
+            <div class="page-header__nav--dropdown uk-dropdown" data-uk-dropdown="delay-hide: 100; mode: click">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </nav>
+</header> 
+
+  <main class="page-wrapper">
+    
+  <div class="breadcrumbs">
+  <div class="uk-container">
+    <ul class="breadcrumbs-menu uk-breadcrumb">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+      <li><span>Душевые кабины</span></li>
+    </ul>
+
+    <h1 class="breadcrumbs-title">Список сравнения</h1>
+  </div>
+</div>
+
+
+  <section class="compare products uk-margin-large-top uk-margin-xlarge-bottom">
+    <div class="uk-container">
+      <header class="uk-margin-medium-bottom">
+        <h2 class="uk-h4 uk-text-bold">Сравнить товары</h2>
+        <div>
+          <a href="#" class="uk-button uk-button-default">Добавить еще товары</a>
+          <a href="#" class="uk-button uk-button-default">Список сравнения</a>
+          <a href="#" class="uk-button uk-button-secondary">Очистить весь список</a>
+        </div>
+      </header>
+
+      <div class="uk-grid uk-grid-match uk-grid-collapse" data-uk-grid="">
+        <div class="uk-width-1-5@m">
+          <div class="compare-filters">
+            <a href="#" class="uk-button uk-button-default">Все характеристики</a>
+            <a href="#" class="uk-button uk-button-default">Только отличия</a>
+            <a href="#" class="uk-button uk-button-default">Только похожие</a>
+          </div>
+
+          <table class="compare-table uk-table uk-visible@m">
+            <tbody>
+            <tr>
+              <td>Высота кабины:</td>
+            </tr>
+            <tr>
+              <td>Ширина кабины:</td>
+            </tr>
+            <tr>
+              <td>Глубина кабины:</td>
+            </tr>
+            <tr>
+              <td>Форма кабины:</td>
+            </tr>
+            <tr>
+              <td>Производитель:</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="uk-width-4-5@m">
+          
+          <div class="compare-slider uk-position-relative" data-uk-slider="autoplay: true">
+            <div class="uk-slider-container">
+              <ul
+                class="compare-slider__items uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-grid-collapse">
+                
+                  <li>
+                    <article class="products-item uk-box-shadow-hover-medium">
+                      <a href="#" class="products-item__delete"><span data-uk-icon="close"></span></a>
+
+                      <div class="products-item__meta">
+                        <h3><a href="#" class="uk-link-reset">Перегородка для душа RGW WA-010B</a></h3>
+                        <div class="products-item__meta--price">
+                          <span>149 000р.</span>
+                          <span>129 000р.</span>
+                        </div>
+                        <span class="products-item__meta--discount">-15%</span>
+                      </div>
+
+                      <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                        <div class="products-item__slideshow--buttons">
+                          <a href="#"><span data-uk-icon="cart"></span></a>
+                          <a href="#"><span data-uk-icon="search"></span></a>
+                          <a href="#"><span data-uk-icon="heart"></span></a>
+                        </div>
+
+                        <ul class="products-item__slideshow--items uk-slideshow-items">
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine1.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine2.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine3.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                        </ul>
+                        <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+                      </div>
+                    </article>
+
+                    <table class="uk-table uk-margin-top uk-disabled">
+                      <tbody>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>Трапеция</td>
+                      </tr>
+                      <tr>
+                        <td>Германия</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                
+                  <li>
+                    <article class="products-item uk-box-shadow-hover-medium">
+                      <a href="#" class="products-item__delete"><span data-uk-icon="close"></span></a>
+
+                      <div class="products-item__meta">
+                        <h3><a href="#" class="uk-link-reset">Перегородка для душа RGW WA-010B</a></h3>
+                        <div class="products-item__meta--price">
+                          <span>149 000р.</span>
+                          <span>132 000р.</span>
+                        </div>
+                        <span class="products-item__meta--discount">-15%</span>
+                      </div>
+
+                      <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                        <div class="products-item__slideshow--buttons">
+                          <a href="#"><span data-uk-icon="cart"></span></a>
+                          <a href="#"><span data-uk-icon="search"></span></a>
+                          <a href="#"><span data-uk-icon="heart"></span></a>
+                        </div>
+
+                        <ul class="products-item__slideshow--items uk-slideshow-items">
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine1.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine2.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine3.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                        </ul>
+                        <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+                      </div>
+                    </article>
+
+                    <table class="uk-table uk-margin-top uk-disabled">
+                      <tbody>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>Трапеция</td>
+                      </tr>
+                      <tr>
+                        <td>Германия</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                
+                  <li>
+                    <article class="products-item uk-box-shadow-hover-medium">
+                      <a href="#" class="products-item__delete"><span data-uk-icon="close"></span></a>
+
+                      <div class="products-item__meta">
+                        <h3><a href="#" class="uk-link-reset">Перегородка для душа RGW WA-010B</a></h3>
+                        <div class="products-item__meta--price">
+                          <span>149 000р.</span>
+                          <span>132 000р.</span>
+                        </div>
+                        <span class="products-item__meta--discount">-15%</span>
+                      </div>
+
+                      <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                        <div class="products-item__slideshow--buttons">
+                          <a href="#"><span data-uk-icon="cart"></span></a>
+                          <a href="#"><span data-uk-icon="search"></span></a>
+                          <a href="#"><span data-uk-icon="heart"></span></a>
+                        </div>
+
+                        <ul class="products-item__slideshow--items uk-slideshow-items">
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine1.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine2.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine3.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                        </ul>
+                        <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+                      </div>
+                    </article>
+
+                    <table class="uk-table uk-margin-top uk-disabled">
+                      <tbody>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>Трапеция</td>
+                      </tr>
+                      <tr>
+                        <td>Германия</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                
+                  <li>
+                    <article class="products-item uk-box-shadow-hover-medium">
+                      <a href="#" class="products-item__delete"><span data-uk-icon="close"></span></a>
+
+                      <div class="products-item__meta">
+                        <h3><a href="#" class="uk-link-reset">Перегородка для душа RGW WA-010B</a></h3>
+                        <div class="products-item__meta--price">
+                          <span>149 000р.</span>
+                          <span>132 000р.</span>
+                        </div>
+                        <span class="products-item__meta--discount">-15%</span>
+                      </div>
+
+                      <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                        <div class="products-item__slideshow--buttons">
+                          <a href="#"><span data-uk-icon="cart"></span></a>
+                          <a href="#"><span data-uk-icon="search"></span></a>
+                          <a href="#"><span data-uk-icon="heart"></span></a>
+                        </div>
+
+                        <ul class="products-item__slideshow--items uk-slideshow-items">
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine1.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine2.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine3.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                        </ul>
+                        <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+                      </div>
+                    </article>
+
+                    <table class="uk-table uk-margin-top uk-disabled">
+                      <tbody>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>Трапеция</td>
+                      </tr>
+                      <tr>
+                        <td>Германия</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                
+                  <li>
+                    <article class="products-item uk-box-shadow-hover-medium">
+                      <a href="#" class="products-item__delete"><span data-uk-icon="close"></span></a>
+
+                      <div class="products-item__meta">
+                        <h3><a href="#" class="uk-link-reset">Перегородка для душа RGW WA-010B</a></h3>
+                        <div class="products-item__meta--price">
+                          <span>149 000р.</span>
+                          <span>222 000р.</span>
+                        </div>
+                        <span class="products-item__meta--discount">-15%</span>
+                      </div>
+
+                      <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                        <div class="products-item__slideshow--buttons">
+                          <a href="#"><span data-uk-icon="cart"></span></a>
+                          <a href="#"><span data-uk-icon="search"></span></a>
+                          <a href="#"><span data-uk-icon="heart"></span></a>
+                        </div>
+
+                        <ul class="products-item__slideshow--items uk-slideshow-items">
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine1.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine2.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                          <li>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                 data-src="resources/img/cabines/cabine3.jpg"
+                                 alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                          </li>
+                        </ul>
+                        <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+                      </div>
+                    </article>
+
+                    <table class="uk-table uk-margin-top uk-disabled">
+                      <tbody>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>1780 мм.</td>
+                      </tr>
+                      <tr>
+                        <td>Трапеция</td>
+                      </tr>
+                      <tr>
+                        <td>Германия</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                
+              </ul>
+            </div>
+
+            <a class="uk-position-center-left-out uk-visible@s" href="#" data-uk-slidenav-previous
+               data-uk-slider-item="previous"></a>
+            <a class="uk-position-center-right-out uk-visible@s" href="#" data-uk-slidenav-next
+               data-uk-slider-item="next"></a>
+
+            <ul class="compare-slider__dots uk-slider-nav uk-dotnav"></ul>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  </main>
+  <footer class="page-footer">
+  <div class="uk-container">
+    <div class="uk-section">
+      <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m" data-uk-grid="">
+        <div>
+          <div class="page-footer__item">
+            <span class="page-footer__item--title">Наши контакты</span>
+            <div class="page-footer__item--contacts">
+              <span data-uk-icon="location"></span>
+              <p><span>наш адрес</span> Нижний Новгород ул. Базовый проезд, 16</p>
+            </div>
+            <div class="page-footer__item--contacts">
+              <span data-uk-icon="receiver"></span>
+              <p>
+                <span>телефоны</span>
+                <a href="+78312758185">+7 (831) 275-81-85</a>
+                <a href="+78312758187">+7 (831) 275-81-87</a>
+              </p>
+            </div>
+            <div class="page-footer__item--contacts">
+              <span data-uk-icon="clock"></span>
+              <p><span>время работы</span> с 9:00 до 17:00 (Пн-Пт)</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="page-footer__item">
+            <span class="page-footer__item--title">Наши коллекции</span>
+            <ul class="page-footer__item--list">
+              <li><a href="#">Дешевые перегородки</a><a href="#">Safari</a></li>
+              <li><a href="#">Аксессуары для душа</a><a href="#">Walk in</a></li>
+              <li><a href="#">Душевые углы</a><a href="#">Viscount</a></li>
+              <li><a href="#">Шторки для душа</a><a href="#">Hotels</a></li>
+              <li><a href="#">Средства чистки</a><a href="#">Tornado</a></li>
+              <li><a href="#">Сифоны</a><a href="#">Stivol</a></li>
+              <li><a href="#">Поддоны</a><a href="#">Leipzig</a></li>
+              <li><a href="#">Трапы для душа</a><a href="#">Passage</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="page-footer__item">
+            <span class="page-footer__item--title">Покупателю</span>
+            <ul class="page-footer__item--list">
+              <li><a href="#">Статьи и новости</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Где купить</a></li>
+              <li><a href="#">Оптовым покупателям</a></li>
+              <li><a href="#">Политика конфинденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="page-footer__item">
+            <span class="page-footer__item--title">Кабинет покупателя</span>
+            <ul class="page-footer__item--list">
+              <li><a href="#">Мои заказы</a></li>
+              <li><a href="#">Избранное</a></li>
+              <li><a href="#">Просмотренные товары</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Личные данные</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer__copyright uk-section-small">
+    <div class="uk-container">
+      <div class="uk-grid" data-uk-grid="">
+        <div class="uk-width-1-3@m">
+          <span>&copy; 2016-2021 RGW-MAGAZIN.RU</span>
+          <span>Royal Glass of Water</span>
+          <span>Официальный интернет магазин компании RGW</span>
+        </div>
+
+        <div class="uk-width-2-3@m">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum excepturi facilis impedit itaque
+            officia ratione tempora ullam ut voluptates. Eveniet facilis ipsum vitae voluptas voluptatem. Asperiores,
+            atque dignissimos et eveniet fugit necessitatibus nihil odio vitae? Amet asperiores dolore error facere
+            fuga id nulla officia officiis placeat, quasi sit, <a href="#">ссылке</a>?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <div id="modal-contact" class="modal-contact" data-uk-modal>
+  <div class="modal-contact__wrapper uk-modal-dialog uk-modal-body">
+    <button class="uk-modal-close-default" type="button" data-uk-close></button>
+    <p class="modal-contact__title">Отправить заявку</p>
+    <p>Перезвоним в течение минуты!</p>
+    <form class="phone-form">
+      <div class="uk-form-controls">
+        <input type="text" class="uk-input phone-input" name="phone" placeholder="+7 (999) 999-99-99" required>
+      </div>
+      <button type="submit" class="uk-button uk-button-secondary">Отправить</button>
+    </form>
+  </div>
+</div>
+
+  <div id="offcanvas" class="page-offcanvas" data-uk-offcanvas="overlay: true; selClose: .close">
+  <div class="uk-offcanvas-bar">
+    <figure class="page-offcanvas__logo">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="resources/img/logo.png" alt="Логотип" title="Логотип" data-uk-img="">
+    </figure>
+
+    
+    <nav class="page-offcanvas__menu">
+      <ul data-uk-accordion>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Каталог <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Новинки <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Новости <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Коллекции <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Отелям <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Опт <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Сервис <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li>
+            <a class="uk-accordion-title" href="#">Акции <span data-uk-icon="chevron-down"></span></a>
+            <div class="uk-accordion-content">
+              <ul>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </nav>
+
+    <div class="page-offcanvas__contacts">
+      <div>
+        <a href="tel:+7499450-54-90">+7 (499) 450-45-90</a>
+        <small>10:00 - 21:00 Без выходных</small>
+      </div>
+      <div>
+        <a href="#modal-contact" class="uk-button uk-button-primary" data-uk-toggle>Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="dist/app.js"></script>
+</body>
+</html>
+

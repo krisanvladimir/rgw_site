@@ -1,0 +1,115 @@
+.post {
+  &-image {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    @include mq(s) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &-text {
+    color: $middle-gray;
+
+    blockquote {
+      font-size: 1.1em;
+      font-weight: 300;
+      position: relative;
+      font-family: $open-sans;
+      margin-bottom: 50px;
+
+      &:before {
+        content: "\201C";
+        position: absolute;
+        font-size: 10em;
+        left: -20px;
+        top: -30px;
+        line-height: 1;
+        color: rgba($blue, 0.3);
+        font-family: Arial, sans-serif;
+        @include mq(m) {
+          left: -50px;
+          top: -30px;
+        }
+      }
+    }
+
+    figure {
+      @include mq(xs) {
+        float: none !important;
+      }
+      @include mq(s) {
+        padding: 20px;
+        margin: 0;
+      }
+
+      img {
+        max-height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      figcaption {
+        font-size: 0.9em;
+        font-weight: 300;
+        margin-top: 15px;
+      }
+    }
+
+    h2,
+    h3,
+    h4 {
+      font-weight: 600;
+    }
+
+    ul {
+      li {
+        &::marker {
+          color: $blue;
+        }
+
+        + li {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    p {
+      font-family: $open-sans;
+    }
+  }
+
+  &-links {
+    text-align: right;
+    margin-top: 40px;
+    @include mq(m) {
+      margin-top: 60px;
+    }
+
+    a {
+      color: $middle-gray;
+      text-decoration: none;
+      margin-top: 15px;
+      font-size: 1.2em;
+      display: block;
+      @include mq(s) {
+        margin-top: 0;
+        margin-left: 30px;
+        display: initial;
+      }
+
+      svg {
+        width: 30px;
+      }
+    }
+
+    &__drop {
+      padding: 15px;
+      background: $white;
+      text-align: center;
+      @extend .uk-box-shadow-medium;
+    }
+  }
+}

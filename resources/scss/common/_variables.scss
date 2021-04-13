@@ -1,0 +1,39 @@
+/** Colors */
+$black: #333;
+$white: #fff;
+$light-gray: #f3f3f3;
+$gray: #a9a9a9;
+$middle-gray: #4f4f4f;
+$light-blue: #c6e6fb;
+$blue: #3399cd;
+$middle-blue: #2ca4e0;
+$dark-blue: #11273f;
+$green: #27ae60;
+$purple: #35266e;
+$red: #fb1021;
+
+$primary-color: $blue;
+$secondary-color: $green;
+$success-color: $green;
+$warning-color: #ecb420;
+$danger-color: $red;
+$notification-success-color: #ebf2f8;
+
+$whatsupp-color: #7ad06d;
+$viber-color: #7d3daf;
+
+// Dimensions
+$border-radius: 4px;
+
+// Fonts
+$montserrat: "Montserrat", sans-serif;
+$open-sans: "Open Sans", sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  "xs": 639px,
+  "s": 640px,
+  "m": 960px,
+  "l": 1200px,
+  "xl": 1600px,
+);

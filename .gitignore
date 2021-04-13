@@ -1,0 +1,22 @@
+# Project
+dist
+
+# JetBrains
+.idea
+
+# Mac
+.DS_Store
+*.zip
+
+# Yarn
+yarn.lock
+
+# Node
+/node_modules
+package-lock.json
+
+# Netbeans
+nbproject
+
+# Laravel-mix
+mix-manifest.json

@@ -1,0 +1,16 @@
+.modal-contact {
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .uk-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

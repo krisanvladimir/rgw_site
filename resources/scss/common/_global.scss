@@ -1,0 +1,18 @@
+:root {
+  --star-color: #e1e1e1;
+  --star-background: #3399cd;
+}
+
+html {
+  color: $black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  flex: 1;
+}

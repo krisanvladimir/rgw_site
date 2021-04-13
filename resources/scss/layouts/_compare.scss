@@ -1,0 +1,97 @@
+.compare {
+  header {
+    @include mq(m) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      @include mq(m) {
+        margin: 0;
+      }
+    }
+
+    .uk-button {
+      line-height: 36px;
+      width: 100%;
+      font-size: 0.9em;
+      @include mq(m) {
+        width: initial;
+      }
+      @include mq(l) {
+        font-size: 1em;
+      }
+
+      + .uk-button {
+        margin-top: 15px;
+        @include mq(m) {
+          margin-top: 0;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  &-filters {
+    margin-bottom: 25px;
+    @include mq(m) {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+
+    a {
+      display: block;
+      font-size: 0.7em;
+      line-height: 36px;
+      padding: 0 10px;
+      @include mq(l) {
+        font-size: 0.9em;
+      }
+
+      + a {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &-table {
+    margin-top: auto;
+  }
+
+  &-slider {
+    .uk-slider-container {
+      padding: 25px 0;
+      margin: -25px 0;
+    }
+
+    .products-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    &__dots {
+      position: absolute;
+      width: 100%;
+      bottom: -40px;
+
+      &.uk-dotnav {
+        > * {
+          flex: 1;
+
+          &:not(:first-child) {
+            padding-left: 0;
+          }
+
+          > * {
+            width: 100%;
+            height: 5px;
+            border-radius: 0;
+            border: none;
+            background: $gray;
+          }
+        }
+      }
+    }
+  }
+}

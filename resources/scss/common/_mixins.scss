@@ -1,0 +1,154 @@
+// Media queries
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break);
+  $xs: map-get($breakpoints, "xs");
+
+  @if ($value <= $xs) {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+// Links hover effect
+@mixin links-hover($color: $white, $bottom: -2px) {
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: $bottom;
+    width: 0;
+    height: 2px;
+    background: $color;
+    transition: width 0.3s;
+  }
+}
+
+// Angle background
+@mixin angle-background($top: true, $bottom: true) {
+  position: relative;
+  overflow: hidden;
+  @if ($top) {
+    &::before {
+      content: " ";
+      display: block;
+      width: 100%;
+      padding-top: 7.8%;
+      position: absolute;
+      z-index: 99;
+      top: -1px;
+      background: url("../images/top-white-bg.png");
+    }
+  }
+  @if ($bottom) {
+    &::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      padding-top: 7.85%;
+      position: absolute;
+      z-index: 99;
+      bottom: -1px;
+      background: url("../images/bottom-white-bg.png");
+    }
+  }
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face(
+  $name,
+  $path,
+  $weight: null,
+  $style: null,
+  $exts: eot woff2 woff ttf svg
+) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_"),
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
+
+  @each $ext in $exts {
+    $extmod: if(
+      map-has-key($extmods, $ext),
+      $ext + map-get($extmods, $ext),
+      $ext
+    );
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append(
+      $src,
+      url(quote($path + "." + $extmod)) format(quote($format)),
+      comma
+    );
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin font-face-ttf(
+  $name,
+  $path,
+  $weight: null,
+  $style: null,
+  $exts: eot ttf svg
+) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_"),
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
+
+  @each $ext in $exts {
+    $extmod: if(
+      map-has-key($extmods, $ext),
+      $ext + map-get($extmods, $ext),
+      $ext
+    );
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append(
+      $src,
+      url(quote($path + "." + $extmod)) format(quote($format)),
+      comma
+    );
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}

@@ -1,0 +1,165 @@
+{% set pageTitle = 'Верстка сайтов' %}
+{% set pageDescription = 'SV-Coding' %}
+{% set breadcrumbsTitle = 'Душевые кабины safari' %}
+
+{% extends './layouts/layout.njk' %}
+
+{% block content %}
+  {% include './partials/_breadcrumbs.njk' %}
+
+  <div class="catalog">
+    <div class="uk-container">
+      <form class="catalog-filters uk-section-small" data-uk-margin>
+        {% set filters = ['Форма душевого угла', 'Размеры', 'Высота', "Цвет стекла", "Толщина стекла", "Конструкция дверей"] %}
+        {% for filter in filters %}
+          <div class="catalog-filters__item">
+            <button type="button">{{ filter }} <span data-uk-icon="chevron-down"></span></button>
+            <div class="uk-drop" data-uk-drop="mode: click; offset: 0;">
+              <label><input class="uk-checkbox" type="checkbox"> Выбор 1</label>
+              <label><input class="uk-checkbox" type="checkbox"> Выбор 2</label>
+              <label><input class="uk-checkbox" type="checkbox"> Выбор 3</label>
+            </div>
+          </div>
+        {% endfor %}
+        <div class="catalog-filters__item">
+          <button type="button">Цена <span data-uk-icon="chevron-down"></span></button>
+          <div class="uk-drop" data-uk-drop="mode: click; offset: 0;">
+            <div class="uk-flex">
+              <div class="catalog-filters__item--before">
+                <span>до</span>
+                <input type="text" class="uk-input">
+              </div>
+              <div class="catalog-filters__item--after">
+                <span>после</span>
+                <input type="text" class="uk-input">
+              </div>
+              <div class="catalog-filters__item--range"></div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-filters__item catalog-filters__item--reset">
+          <button type="button">Сбросить все фильтры</button>
+        </div>
+      </form>
+
+      <hr>
+
+      <form class="catalog-sorting uk-section-small">
+        <div class="catalog-sorting__item">
+          <label for="popularity">Сортировать:</label>
+          <select id="popularity" class="uk-select">
+            <option value="Популярность">Популярность</option>
+            <option value="Цена">Цена</option>
+            <option value="Новизна">Новизна</option>
+          </select>
+        </div>
+
+        <div class="catalog-sorting__item">
+          <label for="quantity">Показывать по:</label>
+          <select id="quantity" class="uk-select">
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="32">32</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="catalog-products products uk-margin-large-bottom">
+        {% set products = [
+          { title: 'Перегородка для душа RGW WA-010B', price: '129 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '132 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '190 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '232 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '111 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '233 000' },
+          { title: 'Перегородка для душа RGW WA-010B', price: '222 000' }
+        ] %}
+        <div
+          class="products-grid uk-grid uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l"
+          data-uk-grid>
+          {% for product in products %}
+            <div>
+              <article class="products-item uk-box-shadow-hover-medium">
+                <div class="products-item__meta">
+                  <h3><a href="#" class="uk-link-reset">{{ product.title }}</a></h3>
+                  <div class="products-item__meta--price">
+                    <span>149 000р.</span>
+                    <span>{{ product.price }}р.</span>
+                  </div>
+                  <span class="products-item__meta--discount">-15%</span>
+                </div>
+                <div class="products-item__slideshow uk-position-relative" data-uk-slideshow="ratio: false">
+                  <div class="products-item__slideshow--buttons">
+                    <a href="#"><span data-uk-icon="cart"></span></a>
+                    <a href="#"><span data-uk-icon="search"></span></a>
+                    <a href="#"><span data-uk-icon="heart"></span></a>
+                  </div>
+                  <ul class="products-item__slideshow--items uk-slideshow-items">
+                    <li>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="resources/img/cabines/cabine1.jpg"
+                           alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                    </li>
+                    <li>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="resources/img/cabines/cabine2.jpg"
+                           alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                    </li>
+                    <li>
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="resources/img/cabines/cabine3.jpg"
+                           alt="Душевая кабина" title="Душевая кабина" data-uk-img="" data-uk-cover>
+                    </li>
+                  </ul>
+                  <ul class="products-item__slideshow--dots uk-slideshow-nav uk-dotnav"></ul>
+                </div>
+              </article>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="pagination uk-margin-medium-top">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">Показать еще <span data-uk-icon="arrow-right"></span></a></li>
+          </ul>
+        </div>
+
+      </div> {# /.catalog-products #}
+    </div>
+  </div>
+
+  <section class="about uk-section bg-light-gray">
+    <div class="uk-container">
+      <header class="uk-margin-medium-bottom">
+        <h2>О компании RGW</h2>
+      </header>
+
+      <div class="uk-grid uk-child-width-1-2@m uk-margin-medium-top" data-uk-grid="">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium animi, atque blanditiis
+            consequatur corporis culpa deleniti deserunt est excepturi facere fugit illum laboriosam laudantium minus,
+            necessitatibus nobis obcaecati officiis quasi, quibusdam quis quisquam quod similique sit tempora tenetur
+            vero? Amet consequuntur explicabo maxime quod tempore. Ab aspernatur, possimus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut cum eos expedita in ipsa maiores possimus
+            praesentium vero vitae. Aspernatur commodi et, illum inventore ipsam perferendis ratione repellat sit.</p>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid aperiam architecto aspernatur
+            deleniti dignissimos dolor doloribus ea, eaque eius fugiat fugit hic, id in ipsum maxime modi nam non
+            nostrum obcaecati odit placeat porro quae qui quia quibusdam quis quo ratione rem repellendus saepe suscipit
+            unde voluptas voluptate voluptatem voluptatibus? Animi aut commodi corporis quisquam quo sint,
+            veritatis?</p>
+        </div>
+      </div>
+    </div>
+  </section> {# /.about #}
+{% endblock %}
